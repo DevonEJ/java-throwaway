@@ -8,9 +8,10 @@ public class LinearSearch {
     Returns the location of the target in the array list - or returns -1 if not found.
     */
 
-    public ArrayList<Integer> input = new ArrayList<Integer>(Arrays.asList(3, 5, 7, 2, 88, 5, 10, 1, 99, 45, 23,1));
+    public ArrayList<Integer> input;
 
-    public LinearSearch() {
+    public LinearSearch(ArrayList<Integer> in) {
+        this.input = in;
     } 
 
     public Integer Search(Integer t) {
@@ -27,25 +28,13 @@ public class LinearSearch {
 
     public static void main(String []args) {
 
-        //ArrayList<Integer> in = new ArrayList(ArrayList<Integer>);
+        ArrayList<Integer> lst = new ArrayList<Integer>(Arrays.asList(3, 5, 7, 2, 88, 5, 10, 1, 99, 45, 23,1));
 
-       // ArrayList<Integer> in = newArrayList(3, 5, 7, 2, 88, 5, 3, 1, 99, 45, 23,1);
-
-        LinearSearch search = new LinearSearch();
-
-        // search.input.add(3);
-        // search.input.add(6);
-        // search.input.add(25);
-        // search.input.add(2);
-        // search.input.add(10);
-        // search.input.add(2);
-        // search.input.add(78);
-        // search.input.add(4);
-        // search.input.add(8);
-        // search.input.add(99);
-
+        LinearSearch search = new LinearSearch(lst);
 
         System.out.println(search.Search(10));
+        System.out.println(search.Search(88));
+        System.out.println(search.Search(5));
 
     }    
 }
