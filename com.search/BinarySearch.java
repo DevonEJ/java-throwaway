@@ -31,7 +31,7 @@ public class BinarySearch {
 
         while (i < max) {
         
-            Integer mid = (min + max) / 2;
+            Integer mid = min + ((max - min) / 2);
 
             if (target == this.input.get(mid)) {
                 return this.input.indexOf(target);
@@ -45,7 +45,6 @@ public class BinarySearch {
         }
         return -1;
     }
-
 
     public static void main(String []args) {
 
