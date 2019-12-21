@@ -60,7 +60,5 @@ public class BinarySearch {
         System.out.println(search.Search("Russia"));
         System.out.println(search.Search("Brazil"));
 
-
-
     }
 }
