@@ -22,7 +22,7 @@ public class InsertionSort {
         }
     }
 
-
+// j represents the sorted portion of the array
 
 
     public static void main(String[] args) {
