@@ -11,7 +11,7 @@ public class InsertionSort {
             int key = input[i];
             
             // while there are unsorted values left in array, and the value to the left of j is larger than it
-            while (j > 0 && key < input[j - 1]) {
+            while (j > 0 && key > input[j - 1]) {
                 // switch position of value to left of j with j
                 input[j] = input[j - 1];
                 // decrement j to move along to next value
